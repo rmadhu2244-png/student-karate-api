@@ -6,6 +6,7 @@ Feature: Student API Testing
   Scenario: Create a new student
     Given url apiURL
     And path 'add-student'
+    And header Content-Type = 'application/json'
     And request
       """
       {
@@ -20,6 +21,7 @@ Feature: Student API Testing
   Scenario: Get all students
     Given url apiURL
     And path 'students'
+    And header Content-Type = 'application/json'
     When method GET
     Then status 200
 #    Then match response ==
@@ -34,6 +36,7 @@ Feature: Student API Testing
   Scenario: Get a student by ID
     Given url apiURL
     And path 'student', 10
+    And header Content-Type = 'application/json'
     When method GET
     Then status 200
     And match response.firstName == "Ram"

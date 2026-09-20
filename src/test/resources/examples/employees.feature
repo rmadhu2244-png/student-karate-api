@@ -11,6 +11,7 @@ Feature: Employee API Testing
 
     """"""Reghghh"
 
+     "test"
   Scenario: Create new record in database
     * def name = 'MadhuTest'
     Given url apiURL

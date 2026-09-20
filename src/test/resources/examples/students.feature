@@ -15,9 +15,10 @@ Feature: Student API Testing
         "lastName": "Karate"
       }
       """
-    When method POST
-    Then status 200
-    Then "Success"
+    #When ""
+     When method POST
+     Then status 200
+     Then "Success"
 
   Scenario: Get all students
     Given url apiURL

@@ -15,7 +15,6 @@ Feature: Student API Testing
         "lastName": "Karate"
       }
       """
-    #When ""
      When method POST
      Then status 200
      Then "Success"

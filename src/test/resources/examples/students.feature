@@ -17,6 +17,7 @@ Feature: Student API Testing
       """
     When method POST
     Then status 200
+    Then "Success"
 
   Scenario: Get all students
     Given url apiURL

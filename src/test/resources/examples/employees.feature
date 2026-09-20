@@ -8,7 +8,7 @@ Feature: Employee API Testing
     And path 'employees'
     When method GET
     Then status 200
-
+     "test"
   Scenario: Create new record in database
     * def name = 'MadhuTest'
     Given url apiURL

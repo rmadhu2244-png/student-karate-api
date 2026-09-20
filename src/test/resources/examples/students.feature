@@ -14,12 +14,10 @@ Feature: Student API Testing
         "firstName": "Ram",
         "lastName": "Karate"
       }
-      """ghjgjhgjhgj
-      ffghfhghg
-      ljljl
-    When method POST
-    Then status 200
-    Then "Success"
+      """
+     When method POST
+     Then status 200
+     Then "Success"
 
   Scenario: Get all students
     Given url apiURL
